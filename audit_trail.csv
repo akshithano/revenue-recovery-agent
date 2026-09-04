@@ -1,61 +1,61 @@
-txn_id,customer,amount,failure_type,prior_attempts,action_taken,reason,outcome,amount_recovered
-TXN1001,Priya Singh,666.68,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,recovered,666.68
-TXN1002,Priya Singh,10247.16,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,10247.16
-TXN1003,Priya Singh,3513.2,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1004,Rohan Gupta,6466.36,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1005,Karan Mehta,5301.02,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,5301.02
-TXN1006,Priya Singh,5884.31,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1007,Ravi Kumar,11026.79,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,11026.79
-TXN1008,Vikram Rao,12492.08,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,recovered,12492.08
-TXN1009,Ravi Kumar,10020.23,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1010,Karan Mehta,4385.49,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,recovered,4385.49
-TXN1011,Sneha Patel,10151.25,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1012,Sneha Patel,2701.18,abandoned_checkout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1013,Rohan Gupta,3527.56,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1014,Ananya Iyer,6196.52,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1015,Ananya Iyer,3424.82,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,3424.82
-TXN1016,Amit Sharma,4193.0,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,recovered,4193.0
-TXN1017,Karan Mehta,13497.89,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1018,Rohan Gupta,7554.18,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1019,Amit Sharma,11943.36,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1020,Neha Joshi,14942.98,card_expired,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1021,Priya Singh,10320.82,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,recovered,10320.82
-TXN1022,Karan Mehta,2624.08,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,2624.08
-TXN1023,Rohan Gupta,13715.54,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1024,Amit Sharma,8228.41,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0
-TXN1025,Priya Singh,13957.68,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1026,Neha Joshi,14220.1,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,14220.1
-TXN1027,Amit Sharma,2186.48,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1028,Neha Joshi,6519.55,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,6519.55
-TXN1029,Karan Mehta,14928.69,card_expired,1,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1030,Priya Singh,3943.46,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,3943.46
-TXN1031,Rohan Gupta,3681.92,bank_timeout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1032,Ravi Kumar,3664.67,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,3664.67
-TXN1033,Sneha Patel,4392.89,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,4392.89
-TXN1034,Neha Joshi,8769.89,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,8769.89
-TXN1035,Priya Singh,1723.98,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1036,Divya Nair,12998.26,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,12998.26
-TXN1037,Ananya Iyer,12068.51,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0
-TXN1038,Rohan Gupta,6894.07,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1039,Sneha Patel,13154.82,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,13154.82
-TXN1040,Ravi Kumar,9886.18,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,9886.18
-TXN1041,Karan Mehta,7438.41,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,7438.41
-TXN1042,Karan Mehta,330.69,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,330.69
-TXN1043,Karan Mehta,10539.59,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,10539.59
-TXN1044,Sneha Patel,14540.0,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0
-TXN1045,Neha Joshi,7308.27,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,7308.27
-TXN1046,Amit Sharma,1306.33,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,1306.33
-TXN1047,Neha Joshi,3918.61,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1048,Neha Joshi,8608.4,card_expired,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1049,Ananya Iyer,3807.92,abandoned_checkout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0
-TXN1050,Vikram Rao,7020.66,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,still_failed,0
-TXN1051,Neha Joshi,14942.61,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,14942.61
-TXN1052,Amit Sharma,14018.85,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,14018.85
-TXN1053,Amit Sharma,6740.75,card_expired,1,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1054,Vikram Rao,13996.75,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0
-TXN1055,Priya Singh,11213.27,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,recovered,11213.27
-TXN1056,Sneha Patel,10848.62,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,still_failed,0
-TXN1057,Vikram Rao,13608.35,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,13608.35
-TXN1058,Vikram Rao,947.12,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,no_response,0
-TXN1059,Amit Sharma,11195.84,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0
-TXN1060,Amit Sharma,8319.72,card_expired,0,nudge,Card expired � retrying is pointless. Ask the customer to update their payment method.,recovered,8319.72
+txn_id,customer,amount,failure_type,prior_attempts,action_taken,reason,outcome,amount_recovered,ai_message
+TXN1001,Priya Singh,666.68,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,recovered,666.68,"Hi Priya, we couldn’t process your payment of Rs 666.68 as the card on file has expired. Could you please update your payment method at your convenience? Thank you!"
+TXN1002,Priya Singh,10247.16,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,10247.16,
+TXN1003,Priya Singh,3513.2,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1004,Rohan Gupta,6466.36,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Rohan Gupta, your cart with items totalling Rs 6466.36 is still waiting for you! Complete your purchase now and enjoy a 5% discount. Let us know if you need any help."
+TXN1005,Karan Mehta,5301.02,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,5301.02,
+TXN1006,Priya Singh,5884.31,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Priya, we noticed your card for the Rs 5,884.31 payment has expired. Could you please update your payment method at your convenience? Thank you!"
+TXN1007,Ravi Kumar,11026.79,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,11026.79,
+TXN1008,Vikram Rao,12492.08,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,recovered,12492.08,"Hi Vikram Rao, we couldn't process your payment of Rs 12,492.08 because the card has expired. Could you please update your payment method? Thank you!"
+TXN1009,Ravi Kumar,10020.23,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Ravi Kumar, your order of Rs 10,020.23 is awaiting payment. It looks like your card has expired—could you please update your payment method? Thank you!"
+TXN1010,Karan Mehta,4385.49,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,recovered,4385.49,"Hi Karan, your order of Rs 4385.49 is ready. It looks like your card expired—could you update your payment method? Thanks!"
+TXN1011,Sneha Patel,10151.25,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1012,Sneha Patel,2701.18,abandoned_checkout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1013,Rohan Gupta,3527.56,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Rohan Gupta, your payment of Rs 3527.56 couldn’t be processed due to an expired card. Could you please update your payment method? We’re here to help!"
+TXN1014,Ananya Iyer,6196.52,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1015,Ananya Iyer,3424.82,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,3424.82,"Hi Ananya, your cart with items totalling Rs 3424.82 is waiting for you. Complete checkout now and enjoy 10% off! Let us know if we can help."
+TXN1016,Amit Sharma,4193.0,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,recovered,4193.0,
+TXN1017,Karan Mehta,13497.89,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Karan, your cart with items worth Rs 13,497.89 is waiting. Complete checkout now and enjoy a 5 % discount!"
+TXN1018,Rohan Gupta,7554.18,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1019,Amit Sharma,11943.36,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Amit Sharma, your cart with items totaling Rs 11943.36 is waiting. Complete your purchase now and enjoy a 5% discount. Need help? We’re here for you!"
+TXN1020,Neha Joshi,14942.98,card_expired,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1021,Priya Singh,10320.82,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,recovered,10320.82,"Hi Priya, your recent payment of Rs 10,320.82 couldn’t be processed because the card has expired. Could you please update your payment method at your convenience? Thank you!"
+TXN1022,Karan Mehta,2624.08,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,2624.08,
+TXN1023,Rohan Gupta,13715.54,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Rohan, your order for Rs 13,715.54 is awaiting payment. It looks like your card expired—could you update your payment method? We're here to help if you need any assistance."
+TXN1024,Amit Sharma,8228.41,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0,
+TXN1025,Priya Singh,13957.68,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Priya, we couldn’t process your payment of Rs 13,957.68 because the card on file has expired. Could you please update your payment method? Thank you!"
+TXN1026,Neha Joshi,14220.1,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,14220.1,
+TXN1027,Amit Sharma,2186.48,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Amit Sharma, your cart with items worth Rs 2,186.48 is still waiting. Complete checkout now and enjoy a 5% discount. We're here if you need any help!"
+TXN1028,Neha Joshi,6519.55,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,6519.55,
+TXN1029,Karan Mehta,14928.69,card_expired,1,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Karan, we noticed your card has expired and your payment of Rs 14,928.69 couldn’t be processed. Could you please update your payment method at your convenience? Thank you!"
+TXN1030,Priya Singh,3943.46,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,3943.46,
+TXN1031,Rohan Gupta,3681.92,bank_timeout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1032,Ravi Kumar,3664.67,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,3664.67,
+TXN1033,Sneha Patel,4392.89,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,4392.89,"Hi Sneha Patel, your cart totaling Rs 4392.89 is waiting for you. Complete checkout now and enjoy a smooth experience—let us know if we can help!"
+TXN1034,Neha Joshi,8769.89,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,8769.89,
+TXN1035,Priya Singh,1723.98,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Priya, your cart with items totaling Rs 1723.98 is still waiting. Complete checkout now and enjoy a 10% discount! Let us know if you need any help."
+TXN1036,Divya Nair,12998.26,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,12998.26,
+TXN1037,Ananya Iyer,12068.51,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0,
+TXN1038,Rohan Gupta,6894.07,abandoned_checkout,1,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Rohan Gupta, your cart with Rs 6894.07 is still waiting. Complete checkout now and enjoy a 5% discount! Let us know if you need any help."
+TXN1039,Sneha Patel,13154.82,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,13154.82,
+TXN1040,Ravi Kumar,9886.18,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,9886.18,
+TXN1041,Karan Mehta,7438.41,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,7438.41,
+TXN1042,Karan Mehta,330.69,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,330.69,"Hi Karan, your cart with Rs 330.69 is still waiting. Complete checkout now and enjoy a special discount. Need help? We're here for you!"
+TXN1043,Karan Mehta,10539.59,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",recovered,10539.59,"Hi Karan, your cart with Rs 10,539.59 is still waiting. Complete your purchase now and enjoy a 5% discount. We're here if you need any help!"
+TXN1044,Sneha Patel,14540.0,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0,
+TXN1045,Neha Joshi,7308.27,bank_timeout,0,retry,Failure type 'bank_timeout' is often temporary. Attempt 1 of 2.,recovered,7308.27,
+TXN1046,Amit Sharma,1306.33,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,1306.33,
+TXN1047,Neha Joshi,3918.61,insufficient_funds,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1048,Neha Joshi,8608.4,card_expired,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1049,Ananya Iyer,3807.92,abandoned_checkout,2,escalate_human,Already attempted 2 times (cap is 2). Stopping automated attempts to avoid spamming the customer.,escalated,0,
+TXN1050,Vikram Rao,7020.66,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,still_failed,0,
+TXN1051,Neha Joshi,14942.61,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,14942.61,
+TXN1052,Amit Sharma,14018.85,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,recovered,14018.85,
+TXN1053,Amit Sharma,6740.75,card_expired,1,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Amit Sharma, your recent order of Rs 6,740.75 couldn’t be processed because your card has expired. Could you please update your payment method? We’re here to help if you need any assistance."
+TXN1054,Vikram Rao,13996.75,insufficient_funds,0,retry,Failure type 'insufficient_funds' is often temporary. Attempt 1 of 2.,still_failed,0,
+TXN1055,Priya Singh,11213.27,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,recovered,11213.27,
+TXN1056,Sneha Patel,10848.62,bank_timeout,1,retry,Failure type 'bank_timeout' is often temporary. Attempt 2 of 2.,still_failed,0,
+TXN1057,Vikram Rao,13608.35,insufficient_funds,1,retry,Failure type 'insufficient_funds' is often temporary. Attempt 2 of 2.,recovered,13608.35,
+TXN1058,Vikram Rao,947.12,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,no_response,0,"Hi Vikram Rao, your recent order of Rs 947.12 couldn’t be processed because the card on file has expired. Could you please update your payment method? We’re here to help!"
+TXN1059,Amit Sharma,11195.84,abandoned_checkout,0,nudge,"Checkout was abandoned, not failed. A reminder/incentive nudge is appropriate.",no_response,0,"Hi Amit Sharma, your cart with items totalling Rs 11,195.84 is still waiting. Complete your purchase now and enjoy a 10% discount with code SAVE10. We're here if you need any help!"
+TXN1060,Amit Sharma,8319.72,card_expired,0,nudge,Card expired — retrying is pointless. Ask the customer to update their payment method.,recovered,8319.72,"Hi Amit Sharma, your order of Rs 8319.72 is awaiting payment. It looks like your card has expired—could you please update your payment method? Let us know if you need any help. Thank you!"

@@ -1,6 +1,7 @@
 import csv
 from rules_engine import decide_action
 from simulate_execution import execute_action
+from ai_messenger import write_recovery_message
 
 INPUT_FILE = "transactions.csv"
 AUDIT_FILE = "audit_trail.csv"
@@ -21,6 +22,10 @@ def run_batch(transactions):
         decision = decide_action(txn)
         result = execute_action(txn, decision)
 
+        message = ""
+        if decision["action"] == "nudge":
+            message = write_recovery_message(txn, decision)
+
         audit_rows.append({
             "txn_id": txn["txn_id"],
             "customer": txn["customer"],
@@ -31,13 +36,14 @@ def run_batch(transactions):
             "reason": decision["reason"],
             "outcome": result["outcome"],
             "amount_recovered": result["amount_recovered"],
+            "ai_message": message,
         })
 
     return audit_rows
 
 
 def save_audit_trail(rows, path):
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
@@ -47,6 +53,7 @@ def print_summary(rows):
     total_at_risk = sum(r["amount"] for r in rows)
     total_recovered = sum(r["amount_recovered"] for r in rows)
     escalated = [r for r in rows if r["action_taken"] == "escalate_human"]
+    nudged = [r for r in rows if r["action_taken"] == "nudge"]
 
     print("=" * 50)
     print("REVENUE RECOVERY SUMMARY")
@@ -56,6 +63,7 @@ def print_summary(rows):
     print(f"Total revenue recovered: Rs {total_recovered:,.2f}")
     print(f"Recovery rate          : {(total_recovered/total_at_risk)*100:.1f}%")
     print(f"Escalated to human      : {len(escalated)} transactions")
+    print(f"AI messages generated   : {len(nudged)} transactions")
     print("=" * 50)
 
 
