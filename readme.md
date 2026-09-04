@@ -54,3 +54,7 @@ The transactions are synthetic. I made them up, not pulled from a real merchant.
 - `ai_messenger.py`: calls Groq to write the customer message, with a fallback
 - `main.py`: runs everything, builds the audit trail
 - `generate_dashboard.py`: builds the html report
+## Built with
+
+* **Python 3** & **Groq API** (`openai/gpt-oss-120b`) for personalized customer messaging.
+* **Claude AI** for rapid prototyping, synthetic data generation, and dashboard layout design.
