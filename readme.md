@@ -58,3 +58,12 @@ The transactions are synthetic. I made them up, not pulled from a real merchant.
 
 * **Python 3** & **Groq API** (`openai/gpt-oss-120b`) for personalized customer messaging.
 * **Claude AI** for rapid prototyping, synthetic data generation, and dashboard layout design.
+## What broke, and how we got out
+
+- Anthropic's free trial credit didn't apply to my account, so I switched to Groq's free tier instead.
+- The first Groq model I used, llama-3.3-70b-versatile, turned out to be deprecated. I had to query Groq's live model list directly to find one I actually had access to.
+- The AI started returning completely empty messages, no errors, just blank text. Turned out the model was spending its whole token budget on invisible internal reasoning before writing the actual reply. Fixed by raising the token limit and printing the raw response to see what was actually happening.
+- Saving the audit trail crashed with a Windows-specific UnicodeEncodeError, caused by a special space character the AI used. Fixed by explicitly saving the file as UTF-8.
+- Excel displayed some special characters as garbled text (â€¯) even after the UTF-8 fix, because Excel doesn't always detect UTF-8 correctly without a BOM marker. The underlying data was fine, this was a display issue in Excel specifically.
+- Early on, .gitignore wasn't created before the first git status check, so .env briefly showed up as untracked. Caught and fixed before anything was ever committed, so the key was never exposed.
+- Added a fallback so that if the AI service is ever unavailable (missing key, network issue, empty response), the agent uses a plain template message instead of crashing the whole batch.
